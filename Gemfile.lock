@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    tchia04_palindrome (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,13 +14,18 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
+    rake (10.5.0)
     ruby-progressbar (1.10.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.17)
+  minitest (~> 5.0)
   minitest-reporters
+  rake (~> 10.0)
+  tchia04_palindrome!
 
 BUNDLED WITH
    1.17.3

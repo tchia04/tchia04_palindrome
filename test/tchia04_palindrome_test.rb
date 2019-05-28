@@ -5,7 +5,31 @@ class Tchia04PalindromeTest < Minitest::Test
     refute_nil ::Tchia04Palindrome::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_non_palindrome
+    assert !"apple".palindrome?
   end
+
+  def test_non_palindrome_with_refute
+    refute "apple".palindrome?
+  end
+
+  def test_literal_palindrome
+    assert "racecar".palindrome?
+  end
+
+  def test_mixed_case_palindrome
+    assert "RaceCar".palindrome?
+  end
+
+  def test_palindrome_with_punctuation
+#    skip "not working"
+    assert "Madam, I'm Adam".palindrome?
+  end
+
+  def test_letters
+#    skip "temp"
+    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
+  end
+
+
 end

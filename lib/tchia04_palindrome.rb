@@ -1,5 +1,8 @@
-require "tchia04_palindrome/version"
+# frozen_string_literal: true
 
+require 'tchia04_palindrome/version'
+
+# Description/Explanation of the String class to get rid of the Style/Documentation from rubocop
 class String
   # Returns true for a palindrome, false otherwise.
   def palindrome?
@@ -10,10 +13,8 @@ class String
   def letters
     the_letters = []
     letter_regex = /[a-z]/i
-    self.chars.each do |character|
-      if character.match(letter_regex)
-        the_letters << character
-      end
+    chars.each do |character|
+      the_letters << character if character.match(letter_regex)
     end
     the_letters.join
   end
@@ -22,7 +23,7 @@ class String
 
   # Returns content for palindrome testing.
   def processed_content
-    self.scan(/[a-z]/i).join.downcase
+    scan(/[a-z]/i).join.downcase
 
     #      self.letters.downcase
   end

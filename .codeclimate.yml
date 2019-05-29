@@ -2,7 +2,15 @@ version: "2"
 plugins:
   bundler-audit:
     enabled: true
-
+  fixme:
+    enabled: true
+    exclude_patterns:
+      - config/engines.yml
+  markdownlint:
+    enabled: true
+    checks:
+      MD002: # "First header should be a h1 header"
+        enabled: false
   shellcheck:
     enabled: true
   rubocop:
@@ -12,19 +20,11 @@ plugins:
     enabled: true
     config:
       score_threshold: 20.0
-ratings:
-  paths:
-  - "**.inc"
-  - "**.js"
-  - "**.jsx"
-  - "**.module"
-  - "**.php"
-  - "**.py"
-  - "**.rb"
 
 exclude_paths:
-- tmp/**/*
-- vendor/**/*
-- log/**/*
-- db/**/*
-
+  - tmp/**/*
+  - vendor/**/*
+  - log/**/*
+  - db/**/*
+  - .bundle/
+  - benchmarks/**/*

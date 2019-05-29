@@ -1,5 +1,7 @@
 # frozen_string_literal: true
-# To update 
+
+#
+# To update a gem:
 #   bundle lock --update <pkg_name>
 #   git diff
 #   bundle install

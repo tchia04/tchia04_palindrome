@@ -8,3 +8,6 @@ AllCops:
 # temporarily disabled until we can reorder the gems
 Bundler/OrderedGems:
   Enabled: False
+Metrics/LineLength:
+  Max: 140
+

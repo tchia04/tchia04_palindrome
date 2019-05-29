@@ -1,4 +1,6 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class Tchia04PalindromeTest < Minitest::Test
   def test_that_it_has_a_version_number
@@ -6,30 +8,28 @@ class Tchia04PalindromeTest < Minitest::Test
   end
 
   def test_non_palindrome
-    assert !"apple".palindrome?
+    assert !'apple'.palindrome?
   end
 
   def test_non_palindrome_with_refute
-    refute "apple".palindrome?
+    refute 'apple'.palindrome?
   end
 
   def test_literal_palindrome
-    assert "racecar".palindrome?
+    assert 'racecar'.palindrome?
   end
 
   def test_mixed_case_palindrome
-    assert "RaceCar".palindrome?
+    assert 'RaceCar'.palindrome?
   end
 
   def test_palindrome_with_punctuation
-#    skip "not working"
+    #    skip "not working"
     assert "Madam, I'm Adam".palindrome?
   end
 
   def test_letters
-#    skip "temp"
-    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
+    #    skip "temp"
+    assert_equal 'MadamImAdam', "Madam, I'm Adam.".letters
   end
-
-
 end

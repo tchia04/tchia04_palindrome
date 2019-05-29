@@ -22,14 +22,12 @@ class Tchia04PalindromeTest < Minitest::Test
   end
 
   def test_palindrome_with_punctuation
-#    skip "not working"
+    #    skip "not working"
     assert "Madam, I'm Adam".palindrome?
   end
 
   def test_letters
-#    skip "temp"
+    #    skip "temp"
     assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
   end
-
-
 end

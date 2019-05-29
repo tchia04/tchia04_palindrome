@@ -4,4 +4,3 @@ require "tchia04_palindrome"
 require "minitest/autorun"
 require "minitest/reporters"
 Minitest::Reporters.use!
-

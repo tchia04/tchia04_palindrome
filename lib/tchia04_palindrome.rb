@@ -1,7 +1,6 @@
 require "tchia04_palindrome/version"
 
 class String
-
   # Returns true for a palindrome, false otherwise.
   def palindrome?
     processed_content == processed_content.reverse
@@ -21,15 +20,15 @@ class String
 
   private
 
-    # Returns content for palindrome testing.
-    def processed_content
-      self.scan(/[a-z]/i).join.downcase
+  # Returns content for palindrome testing.
+  def processed_content
+    self.scan(/[a-z]/i).join.downcase
 
-#      self.letters.downcase
-    end
+    #      self.letters.downcase
+  end
 end
 
-#module Tchia04Palindrome
+# module Tchia04Palindrome
 #  class Error < StandardError; end
-  # Your code goes here...
-#end
+# Your code goes here...
+# end

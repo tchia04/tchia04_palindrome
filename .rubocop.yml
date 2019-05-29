@@ -1,0 +1,10 @@
+# For more configurations see  https://rubocop.readthedocs.io/en/latest/configuration/
+
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.4.6
+
+# temporarily disabled until we can reorder the gems
+Bundler/OrderedGems:
+  Enabled: False

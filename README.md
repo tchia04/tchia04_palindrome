@@ -1,6 +1,9 @@
 # Tchia04Palindrome
 [![Build Status](https://travis-ci.org/tchia04/tchia04_palindrome.svg?branch=master)](https://travis-ci.org/tchia04/tchia04_palindrome)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/f8ba4c562f6fbb9b7d8a/maintainability)](https://codeclimate.com/github/tchia04/tchia04_palindrome/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f8ba4c562f6fbb9b7d8a/test_coverage)](https://codeclimate.com/github/tchia04/tchia04_palindrome/test_coverage)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tchia04_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem

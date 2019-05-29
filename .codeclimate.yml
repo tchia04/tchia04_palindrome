@@ -12,3 +12,19 @@ plugins:
     enabled: true
     config:
       score_threshold: 20.0
+ratings:
+  paths:
+  - "**.inc"
+  - "**.js"
+  - "**.jsx"
+  - "**.module"
+  - "**.php"
+  - "**.py"
+  - "**.rb"
+
+exclude_paths:
+- tmp/**/*
+- vendor/**/*
+- log/**/*
+- db/**/*
+

@@ -13,6 +13,11 @@ plugins:
     enabled: true
   rubocop:
     enabled: true
+     # Avaiable channels: https://docs.codeclimate.com/docs/rubocop
+    channel: "rubocop-0-67"
+#    channel: "rubocop-0-68" This doesn't exist yet
+#    channel: "rubocop-0-70" This doesn't exist yet
+#    channel: "stable" this is pointing to 0.52.1
   duplication:
     enabled: true
     config:

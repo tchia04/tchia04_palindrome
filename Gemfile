@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+#
+# To update a gem:
+#   bundle lock --update <pkg_name>
+#   git diff
+#   bundle install
 source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
@@ -8,6 +13,8 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 gem 'minitest-reporters'
-gem 'rubocop'
-gem 'rubocop-performance'
-gem 'rubocop-rspec'
+# gem 'rubocop', '~> 0.70.0'
+gem 'rubocop', '~> 0.67.2'
+# gem 'rubocop', '~> 0.52.1'
+# gem 'rubocop-performance'
+# gem 'rubocop-rspec'

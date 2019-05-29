@@ -6,9 +6,9 @@ plugins:
   fixme:
     enabled: true
     exclude_patterns:
-      - config/engines.yml
+      - README.md
   markdownlint:
-    enabled: true
+    enabled: false
   shellcheck:
     enabled: true
   rubocop:

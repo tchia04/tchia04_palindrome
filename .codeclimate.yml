@@ -67,4 +67,4 @@ exclude_patterns:
   - db/**/*
   - .bundle/
   - benchmarks/**/*
-  - *.log
+  - '*.log'

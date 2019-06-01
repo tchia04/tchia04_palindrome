@@ -60,10 +60,11 @@ checks:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
 
-exclude_paths:
+exclude_patterns:
   - tmp/**/*
   - vendor/**/*
   - log/**/*
   - db/**/*
   - .bundle/
   - benchmarks/**/*
+  - *.log

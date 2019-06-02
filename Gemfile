@@ -20,7 +20,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 group :test do
-  gem "minitest-reporters"
+  gem 'minitest-reporters'
   # gem 'rubocop', '~> 0.70.0'
   gem 'rubocop', '~> 0.67.2'
   # gem 'rubocop', '~> 0.52.1'

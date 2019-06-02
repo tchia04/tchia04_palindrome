@@ -9,7 +9,8 @@ Rake::TestTask.new(:test) do |t|
   t.test_files = FileList['test/**/*_test.rb']
 end
 
-task default: %i[exe_rubocop print_rubocop_log]
+task default: %i[rubocop:exe_rubocop rubocop:print_rubocop_log]
+task rubocop: %i[rubocop:exe_rubocop rubocop:print_rubocop_log]
 
 namespace :rubocop do
   desc 'Execute rubocop'

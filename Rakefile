@@ -10,6 +10,7 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task default: %i[rubocop:exe_rubocop rubocop:print_rubocop_log]
+
 task rubocop: %i[rubocop:exe_rubocop rubocop:print_rubocop_log]
 
 namespace :rubocop do
@@ -22,6 +23,7 @@ namespace :rubocop do
     #   sh "rubocop -S -o rubocop.log"
     `rubocop -S -o rubocop.log`
   end
+
   desc 'Print rubocop.log'
   task :print_rubocop_log do
     File.foreach('rubocop.log') { |line| puts line }
